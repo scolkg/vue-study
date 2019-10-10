@@ -2,8 +2,6 @@ var express = require('express');
 var path = require('path');
 var fs = require('fs') // 파일 로드 사용
 
-var routes = require('./dist/app');
-
 var app = express();
 
 app.use('/dist', express.static('dist'));

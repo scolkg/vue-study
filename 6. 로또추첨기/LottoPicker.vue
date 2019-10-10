@@ -111,7 +111,7 @@
             console.log('destroyed');
         },
 
-        // 어떤 값에 변경이 있는지 감시하여 동작. - 무한반족 위험성이 있으니 최대한 안쓰는게 좋은 watch!
+        // 어떤 값에 변경이 있는지 감시하여 동작. - 최대한 쓰지 말자
         /*
         watch: {
             redo( val, oldVal ) {
@@ -120,6 +120,7 @@
                 console.log("===================e")
                 if( !redo ){
                     console.log("watched!!");
+                    this.showBalls();
                 }
             }
         },
@@ -128,6 +129,16 @@
 
 </script>
 
-<style>
-
+<style scoped>
+    .ball {
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 20px;
+    }
 </style>
