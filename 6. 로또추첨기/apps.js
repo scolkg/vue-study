@@ -8,7 +8,7 @@ app.use('/dist', express.static('dist'));
 
 
 app.get('/', function(req, res){
-    fs.readFile('LottoPicker.html', function(error, data){
+    fs.readFile('TicTacToe.html', function(error, data){
         if(error){
             console.log(error);
         }else{
